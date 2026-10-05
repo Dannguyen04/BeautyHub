@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BeautyHub — tìm photographer và makeup artist phù hợp tại TP.HCM." />
+  <meta name="theme-color" content="#fffaf4" />
+  <title>BeautyHub — Đúng gu, đúng người, đúng lịch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BeautyHub trang chủ">
+      <span class="brand-mark">B</span><span>beautyhub</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Điều hướng chính">
+      <a href="#explore">Khám phá</a>
+      <a href="#how-it-works">Cách hoạt động</a>
+      <a href="#dashboard">Lịch hẹn</a>
+    </nav>
+    <div class="header-actions">
+      <div class="role-switch" aria-label="Chuyển chế độ demo">
+        <button class="role-pill active" data-role="customer">Khách</button>
+        <button class="role-pill" data-role="provider">Creator</button>
+        <button class="role-pill" data-role="admin">Admin</button>
+      </div>
+      <button class="icon-btn notification-btn" aria-label="Thông báo">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg>
+        <span class="notification-dot"></span>
+      </button>
+      <button class="avatar-btn" aria-label="Tài khoản Minh Anh">MA</button>
+    </div>
+  </header>
+
+  <main id="app">
+    <section id="customer-view" class="role-view active">
+      <section class="hero" id="home">
+        <img src="/assets/hero-beautyhub.png" alt="Buổi chụp beauty portrait tại studio" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="eyebrow light">BEAUTY, CURATED FOR YOU</span>
+          <h1>Đúng gu.<br />Đúng người.<br /><em>Đúng khoảnh khắc.</em></h1>
+          <p>Tìm photographer và makeup artist được chọn lọc tại TP.HCM.</p>
+          <form class="hero-search" id="hero-search">
+            <label><span>Dịch vụ</span><select id="hero-service"><option value="">Tất cả dịch vụ</option><option>Photographer</option><option>Makeup Artist</option></select></label>
+            <span class="search-divider"></span>
+            <label><span>Khu vực</span><select id="hero-location"><option value="">Toàn TP.HCM</option><option>Quận 1</option><option>Quận 3</option><option>Bình Thạnh</option><option>Thủ Đức</option><option>Phú Nhuận</option><option>Tân Bình</option></select></label>
+            <span class="search-divider"></span>
+            <label><span>Ngày</span><input id="hero-date" type="date" value="2026-10-11" min="2026-10-05" /></label>
+            <button class="search-submit" type="submit" aria-label="Tìm creator"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>Tìm kiếm</span></button>
+          </form>
+        </div>
+        <div class="hero-proof"><span class="proof-faces"><i>LA</i><i>MK</i><i>TH</i></span><strong>40+ creator</strong><span>đã được xác minh</span></div>
+      </section>
+
+      <section class="section category-section">
+        <div class="section-heading"><div><span class="eyebrow">BẮT ĐẦU TỪ NHU CẦU</span><h2>Hôm nay bạn cần ai?</h2></div></div>
+        <div class="category-grid">
+          <button class="category-card photo-card" data-filter-category="Photographer">
+            <span class="category-index">01</span>
+            <div><span>Ghi lại câu chuyện của bạn</span><h3>Photographer</h3><p>Personal · Profile · Graduation · Couple</p></div>
+            <span class="round-arrow">↗</span>
+          </button>
+          <button class="category-card makeup-card" data-filter-category="Makeup Artist">
+            <span class="category-index">02</span>
+            <div><span>Tỏa sáng theo cách của bạn</span><h3>Makeup Artist</h3><p>Photoshoot · Graduation · Party / Event</p></div>
+            <span class="round-arrow">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section explore-section" id="explore">
+        <div class="section-heading inline"><div><span class="eyebrow">CREATOR NỔI BẬT</span><h2>Được yêu thích tuần này</h2></div><p>Đã kiểm tra portfolio, giá và lịch trống để bạn chọn nhanh hơn.</p></div>
+        <div class="filter-row" id="filters">
+          <button class="filter-chip active" data-filter="all">Tất cả</button>
+          <button class="filter-chip" data-filter="Photographer">Photographer</button>
+          <button class="filter-chip" data-filter="Makeup Artist">Makeup Artist</button>
+          <button class="filter-chip" data-filter="Natural">Natural</button>
+          <button class="filter-chip" data-filter="Korean">Korean</button>
+          <button class="filter-chip" data-filter="Cinematic">Cinematic</button>
+          <button class="filter-chip filter-more" id="open-filter">Bộ lọc <span>⌄</span></button>
+        </div>
+        <div class="creator-grid" id="creator-grid"></div>
+        <div class="section-cta"><button class="text-link" id="show-all">Xem tất cả creator <span>→</span></button></div>
+      </section>
+
+      <section class="manifesto" id="how-it-works">
+        <div class="manifesto-copy"><span class="eyebrow light">BEAUTYHUB PROMISE</span><h2>Đẹp theo cách<br /><em>rất riêng của bạn.</em></h2><p>Không chạy theo một khuôn mẫu. Chúng tôi kết nối bạn với người hiểu đúng gu, đúng mong muốn và tôn trọng câu chuyện của bạn.</p><a href="#explore" class="light-link">Tìm creator phù hợp <span>→</span></a></div>
+        <div class="steps-list">
+          <article><span>01</span><div><h3>Khám phá đúng gu</h3><p>Lọc theo phong cách, khu vực, ngân sách và lịch trống.</p></div></article>
+          <article><span>02</span><div><h3>Đặt lịch minh bạch</h3><p>Xem rõ gói dịch vụ, giá và tiền cọc trước khi xác nhận.</p></div></article>
+          <article><span>03</span><div><h3>An tâm trải nghiệm</h3><p>Creator được xác minh, review chỉ đến từ booking thật.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section bookings-section" id="dashboard">
+        <div class="section-heading"><div><span class="eyebrow">LỊCH CỦA BẠN</span><h2>Booking của Minh Anh</h2></div><div class="booking-tabs"><button class="active" data-booking-filter="active">Sắp tới</button><button data-booking-filter="past">Đã qua</button><button data-booking-filter="cancelled">Đã hủy</button></div></div>
+        <div id="customer-bookings" class="booking-list"></div>
+      </section>
+    </section>
+
+    <section id="provider-view" class="role-view dashboard-shell">
+      <aside class="dash-sidebar">
+        <div><span class="eyebrow">CREATOR SPACE</span><h2>Lan Anh Studio</h2><p class="verified-line">✓ Đã xác minh</p></div>
+        <nav><button class="active">Tổng quan</button><button>Lịch của tôi</button><button>Gói dịch vụ</button><button>Portfolio</button><button>Đánh giá</button></nav>
+        <div class="mini-profile"><span>LA</span><div><strong>Lan Anh</strong><small>Photographer</small></div></div>
+      </aside>
+      <div class="dash-main">
+        <div class="dash-welcome"><div><span class="eyebrow">THỨ HAI, 05 THÁNG 10</span><h1>Chào buổi sáng, Lan Anh.</h1><p>Bạn có <strong id="request-count">0 yêu cầu mới</strong> cần phản hồi.</p></div><button class="primary-btn" id="block-slot">+ Chặn lịch</button></div>
+        <div class="metrics-grid" id="provider-metrics"></div>
+        <div class="dash-grid">
+          <section class="panel span-2"><div class="panel-heading"><div><span class="eyebrow">CẦN PHẢN HỒI</span><h2>Yêu cầu đặt lịch</h2></div><span class="status-dot-label"><i></i> Live</span></div><div id="provider-requests"></div></section>
+          <section class="panel"><div class="panel-heading"><div><span class="eyebrow">HÔM NAY</span><h2>Lịch làm việc</h2></div><button class="icon-btn">•••</button></div><div class="today-card"><strong>Không có lịch hôm nay</strong><p>Ngày trống là khoảng thở để sáng tạo.</p><button class="text-link">Xem lịch tuần →</button></div></section>
+          <section class="panel span-2"><div class="panel-heading"><div><span class="eyebrow">SẮP TỚI</span><h2>Booking đã xác nhận</h2></div></div><div id="provider-upcoming"></div></section>
+          <section class="panel revenue-panel"><span class="eyebrow">DOANH THU THÁNG 10</span><strong id="provider-revenue">0đ</strong><p>Tiền cọc đã xác nhận</p><div class="mini-chart"><i style="height:32%"></i><i style="height:58%"></i><i style="height:44%"></i><i style="height:80%"></i><i style="height:68%"></i><i style="height:94%"></i><i style="height:72%"></i></div></section>
+        </div>
+      </div>
+    </section>
+
+    <section id="admin-view" class="role-view dashboard-shell admin-shell">
+      <aside class="dash-sidebar dark-sidebar">
+        <div><span class="eyebrow light">BEAUTYHUB OPS</span><h2>Admin console</h2></div>
+        <nav><button class="active">Tổng quan</button><button>Providers <span class="nav-badge" id="pending-provider-badge">1</span></button><button>Bookings</button><button>Disputes</button><button>Nội dung</button><button>Audit log</button></nav>
+        <div class="mini-profile"><span>AD</span><div><strong>Operations</strong><small>Administrator</small></div></div>
+      </aside>
+      <div class="dash-main">
+        <div class="dash-welcome"><div><span class="eyebrow">MARKETPLACE HEALTH</span><h1>Tổng quan vận hành.</h1><p>Dữ liệu thời gian thực từ bản MVP.</p></div><button class="outline-btn">Xuất báo cáo</button></div>
+        <div class="metrics-grid admin-metrics" id="admin-metrics"></div>
+        <div class="dash-grid">
+          <section class="panel span-2"><div class="panel-heading"><div><span class="eyebrow">HÀNG CHỜ DUYỆT</span><h2>Xác minh provider</h2></div></div><div id="verification-list"></div></section>
+          <section class="panel funnel-panel"><div class="panel-heading"><div><span class="eyebrow">CONVERSION</span><h2>Booking funnel</h2></div></div><div id="funnel"></div></section>
+          <section class="panel span-3"><div class="panel-heading"><div><span class="eyebrow">GIAO DỊCH GẦN ĐÂY</span><h2>Tất cả booking</h2></div><button class="text-link">Xem toàn bộ →</button></div><div id="admin-bookings" class="table-wrap"></div></section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="brand footer-brand"><span class="brand-mark">B</span><span>beautyhub</span></div><p>Đúng người cho khoảnh khắc của bạn.</p><div><a href="#">Điều khoản</a><a href="#">Chính sách hủy</a><a href="#">Hỗ trợ</a></div></footer>
+
+  <nav class="mobile-nav"><button data-jump="home" class="active"><span>⌂</span>Trang chủ</button><button data-jump="explore"><span>⌕</span>Khám phá</button><button data-jump="dashboard"><span>♡</span>Lịch hẹn</button><button data-role-mobile="provider"><span>○</span>Tài khoản</button></nav>
+
+  <div class="modal-backdrop" id="provider-modal" aria-hidden="true"><div class="modal provider-modal-content" role="dialog" aria-modal="true"><button class="modal-close" data-close-modal>×</button><div id="provider-detail"></div></div></div>
+  <div class="modal-backdrop" id="booking-modal" aria-hidden="true"><div class="modal booking-modal-content" role="dialog" aria-modal="true"><button class="modal-close" data-close-modal>×</button><div id="booking-flow"></div></div></div>
+  <div class="modal-backdrop" id="review-modal" aria-hidden="true"><div class="modal small-modal" role="dialog" aria-modal="true"><button class="modal-close" data-close-modal>×</button><div id="review-form"></div></div></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

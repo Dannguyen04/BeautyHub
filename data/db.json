@@ -1,0 +1,334 @@
+{
+  "providers": [
+    {
+      "id": "lan-anh",
+      "name": "Lan Anh Studio",
+      "handle": "@lananh.visuals",
+      "category": "Photographer",
+      "districts": [
+        "Quận 1",
+        "Quận 3",
+        "Phú Nhuận"
+      ],
+      "styles": [
+        "Korean",
+        "Natural",
+        "Minimal"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 128,
+      "completed": 186,
+      "verified": true,
+      "responseTime": "15 phút",
+      "bio": "Mình kể câu chuyện của bạn bằng ánh sáng tự nhiên và những khoảnh khắc thật. Chuyên ảnh cá nhân, profile và tốt nghiệp tại TP.HCM.",
+      "image": "/assets/hero-beautyhub.png",
+      "accent": "peach",
+      "packages": [
+        {
+          "id": "la-basic",
+          "name": "Chân dung tinh giản",
+          "duration": 60,
+          "deliverables": "10 ảnh chỉnh màu",
+          "price": 900000
+        },
+        {
+          "id": "la-signature",
+          "name": "Signature Story",
+          "duration": 120,
+          "deliverables": "25 ảnh chỉnh + 1 reel",
+          "price": 1500000
+        }
+      ],
+      "availability": {
+        "2026-10-11": [
+          "09:00",
+          "11:00",
+          "14:00",
+          "16:00"
+        ],
+        "2026-10-12": [
+          "10:00",
+          "14:00",
+          "17:00"
+        ],
+        "2026-10-18": [
+          "09:00",
+          "13:00",
+          "15:00"
+        ]
+      }
+    },
+    {
+      "id": "minh-khoa",
+      "name": "Minh Khoa",
+      "handle": "@khoa.frames",
+      "category": "Photographer",
+      "districts": [
+        "Quận 1",
+        "Bình Thạnh",
+        "Thủ Đức"
+      ],
+      "styles": [
+        "Cinematic",
+        "Street",
+        "Film"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 94,
+      "completed": 142,
+      "verified": true,
+      "responseTime": "30 phút",
+      "bio": "Những bộ ảnh giàu cảm xúc, có chuyển động và chất điện ảnh. Mình luôn giúp khách cảm thấy tự nhiên trước ống kính.",
+      "image": "/assets/minh-khoa.png",
+      "accent": "blue",
+      "packages": [
+        {
+          "id": "mk-street",
+          "name": "Street Muse",
+          "duration": 90,
+          "deliverables": "18 ảnh chỉnh màu",
+          "price": 1200000
+        },
+        {
+          "id": "mk-film",
+          "name": "Cinematic Day",
+          "duration": 180,
+          "deliverables": "35 ảnh + video ngắn",
+          "price": 2300000
+        }
+      ],
+      "availability": {
+        "2026-10-11": [
+          "08:00",
+          "13:00",
+          "15:30"
+        ],
+        "2026-10-17": [
+          "09:00",
+          "14:00",
+          "16:00"
+        ],
+        "2026-10-18": [
+          "10:00",
+          "15:00"
+        ]
+      }
+    },
+    {
+      "id": "thu-ha",
+      "name": "Thu Hà Makeup",
+      "handle": "@thuha.glow",
+      "category": "Makeup Artist",
+      "districts": [
+        "Quận 1",
+        "Quận 3",
+        "Bình Thạnh",
+        "Phú Nhuận"
+      ],
+      "styles": [
+        "Natural",
+        "Korean",
+        "Luxury"
+      ],
+      "rating": 5,
+      "reviewsCount": 76,
+      "completed": 118,
+      "verified": true,
+      "responseTime": "10 phút",
+      "bio": "Makeup trong veo, tôn đường nét riêng và bền đẹp suốt buổi chụp. Sản phẩm chuyên nghiệp, vệ sinh dụng cụ sau mỗi khách.",
+      "image": "/assets/thu-ha.png",
+      "accent": "rose",
+      "packages": [
+        {
+          "id": "th-photo",
+          "name": "Photoshoot Glow",
+          "duration": 75,
+          "deliverables": "Makeup + làm tóc cơ bản",
+          "price": 750000
+        },
+        {
+          "id": "th-event",
+          "name": "Event Ready",
+          "duration": 100,
+          "deliverables": "Makeup + tóc + touch-up kit",
+          "price": 1100000
+        }
+      ],
+      "availability": {
+        "2026-10-11": [
+          "07:00",
+          "10:00",
+          "13:00"
+        ],
+        "2026-10-12": [
+          "08:00",
+          "11:00",
+          "15:00"
+        ],
+        "2026-10-18": [
+          "07:00",
+          "12:00",
+          "16:00"
+        ]
+      }
+    },
+    {
+      "id": "nhi-tran",
+      "name": "Nhi Trần",
+      "handle": "@nhi.editorial",
+      "category": "Makeup Artist",
+      "districts": [
+        "Quận 3",
+        "Phú Nhuận",
+        "Tân Bình"
+      ],
+      "styles": [
+        "Editorial",
+        "Y2K",
+        "Luxury"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 52,
+      "completed": 83,
+      "verified": false,
+      "responseTime": "1 giờ",
+      "bio": "Layout makeup cá tính cho editorial, sự kiện và những concept cần điểm nhấn khác biệt.",
+      "image": "/assets/nhi-tran.png",
+      "accent": "lilac",
+      "packages": [
+        {
+          "id": "nt-editorial",
+          "name": "Editorial Look",
+          "duration": 90,
+          "deliverables": "Makeup concept + tóc",
+          "price": 950000
+        },
+        {
+          "id": "nt-party",
+          "name": "Party Statement",
+          "duration": 75,
+          "deliverables": "Makeup + tóc cơ bản",
+          "price": 800000
+        }
+      ],
+      "availability": {
+        "2026-10-11": [
+          "09:00",
+          "12:00",
+          "16:00"
+        ],
+        "2026-10-17": [
+          "11:00",
+          "15:00",
+          "18:00"
+        ],
+        "2026-10-18": [
+          "10:00",
+          "14:00"
+        ]
+      }
+    }
+  ],
+  "bookings": [
+    {
+      "id": "BH051026",
+      "customerId": "customer-1",
+      "customerName": "Minh Anh",
+      "providerId": "lan-anh",
+      "providerName": "Lan Anh Studio",
+      "service": "Photographer",
+      "packageId": "la-basic",
+      "packageName": "Chân dung tinh giản",
+      "date": "2026-10-11",
+      "time": "09:00",
+      "location": "Quận 1",
+      "price": 900000,
+      "deposit": 270000,
+      "status": "PENDING",
+      "paymentStatus": "AWAITING",
+      "notes": "Mình muốn chụp profile LinkedIn tone sáng, tự nhiên.",
+      "createdAt": "2026-10-05T06:58:12.950Z"
+    },
+    {
+      "id": "BH240921",
+      "customerId": "customer-1",
+      "customerName": "Minh Anh",
+      "providerId": "lan-anh",
+      "providerName": "Lan Anh Studio",
+      "service": "Photographer",
+      "packageId": "la-basic",
+      "packageName": "Chân dung tinh giản",
+      "date": "2026-10-11",
+      "time": "11:00",
+      "location": "Quận 3",
+      "price": 900000,
+      "deposit": 270000,
+      "status": "CONFIRMED",
+      "paymentStatus": "PAID",
+      "notes": "Chụp profile cá nhân, tone sáng và tự nhiên.",
+      "createdAt": "2026-10-03T08:00:00.000Z"
+    },
+    {
+      "id": "BH180812",
+      "customerId": "customer-1",
+      "customerName": "Minh Anh",
+      "providerId": "lan-anh",
+      "providerName": "Lan Anh Studio",
+      "service": "Photographer",
+      "packageId": "la-signature",
+      "packageName": "Signature Story",
+      "date": "2026-09-20",
+      "time": "14:00",
+      "location": "Quận 1",
+      "price": 1500000,
+      "deposit": 450000,
+      "status": "COMPLETED",
+      "paymentStatus": "PAID",
+      "notes": "",
+      "createdAt": "2026-09-15T08:00:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rv-1",
+      "bookingId": "seed-1",
+      "providerId": "lan-anh",
+      "customerName": "Mai Phương",
+      "rating": 5,
+      "text": "Chị Lan hướng dẫn dáng rất nhẹ nhàng, ảnh nhận được đúng chất mình muốn.",
+      "createdAt": "2026-09-22T08:00:00.000Z"
+    },
+    {
+      "id": "rv-2",
+      "bookingId": "seed-2",
+      "providerId": "thu-ha",
+      "customerName": "Ngọc Trâm",
+      "rating": 5,
+      "text": "Lớp nền mỏng và bền cả buổi. Hà còn đến sớm hơn lịch hẹn.",
+      "createdAt": "2026-09-18T08:00:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1791183492950,
+      "audience": "provider",
+      "text": "Booking mới từ Minh Anh",
+      "time": "Vừa xong",
+      "unread": true
+    },
+    {
+      "id": 1,
+      "audience": "customer",
+      "text": "Booking BH240921 đã được xác nhận",
+      "time": "2 ngày trước",
+      "unread": true
+    },
+    {
+      "id": 2,
+      "audience": "provider",
+      "text": "Bạn có một booking vào Chủ Nhật",
+      "time": "3 giờ trước",
+      "unread": true
+    }
+  ]
+}
